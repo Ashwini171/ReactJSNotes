@@ -1,0 +1,33 @@
+Requirements:
+1. Node version >= 8.10
+2. NPM version >= 5.6 
+
+Create a new React project:
+1.npx create-react-app my-app
+2.cd my-app
+3.npm start
+
+React Components:
+1. Every React component have their own structure, methods as well as APIs.
+2. They can be reusable as per your need.
+3. mainly two types of components: Functional Components and Class Components.
+
+Functional Components:
+1. only contain a render method and don't have their own state.
+2. create a function that takes props(properties) as input and returns what should be rendered.
+function WelcomeMessage(props) {  
+  return <h1>Welcome to the , {props.name}</h1>;  
+}  
+
+Class Components:
+1. It requires you to extend from React. Component and create a render function which returns a React element.
+class MyComponent extends React.Component {  
+  render() {  
+    return (  
+      <div>This is main component.</div>  
+    );  
+  }  
+}  
+2. also known as a stateful component because they can hold or manage local state.
+
+State:
